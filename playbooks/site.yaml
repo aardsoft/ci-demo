@@ -1,0 +1,14 @@
+- hosts: all,!localhost
+  become: True
+  vars:
+    ansible_user: management
+  roles:
+    - basic-host
+
+- hosts: microgw
+  become: True
+  vars:
+    ansible_user: management
+  roles:
+    - dhcpd-isc
+    - dns-cache-unbound

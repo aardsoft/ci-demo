@@ -1,0 +1,9 @@
+os_release: "tumbleweed"
+suse_base_url: https://download.opensuse.org
+network_manager: "networkd"
+
+vlans:
+  demo: 4000
+
+management_keys:
+  - bwachter
