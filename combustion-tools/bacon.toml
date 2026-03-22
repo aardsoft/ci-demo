@@ -1,6 +1,0 @@
-default_job = "clippy"
-ignore = ["**/.*.swp"]
-
-[jobs.clippy]
-command = ["cargo", "clippy", "--color", "always"]
-need_stdout = false
